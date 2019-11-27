@@ -299,7 +299,7 @@ public class SdkUtil {
 
     public static SecurePreferences newPreferences(Context context, String name) {
 
-        SecurePreferences preferences = new SecurePreferences(context, context.getString(R.string.PREFERENCE_PASSWORD), name);
+        SecurePreferences preferences = new SecurePreferences(context, null, name);
         int prefVersion;
         try {
             prefVersion = preferences.getInt(Constants.KEY_PREFERENCES_VERSION, 0);
